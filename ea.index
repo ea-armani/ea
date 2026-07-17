@@ -385,8 +385,8 @@
       // ==== SUPABASE PROJECT CREDENTIALS ====
       // Same project as the source system, but Emporio Armani uses its own
       // table/bucket namespace (ea_*) so data never mixes with other stores.
-      const SUPABASE_URL = 'https://uuhsjusmhmmjceujzoiw.supabase.co';
-      const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1aHNqdXNtaG1tamNldWp6b2l3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU2MDU0MTUsImV4cCI6MjA4MTE4MTQxNX0.zaOtLcZGoNV77AiLrbODv3gIamlHWh8QwbBdWeOfJLw';
+      const SUPABASE_URL = 'https://kvgkmxynmwbjdpqfbhio.supabase.co';
+      const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt2Z2tteHlubXdiamRwcWZiaGlvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQyNzA0NzMsImV4cCI6MjA5OTg0NjQ3M30.uDWbCSVA5FXq2n_FFzjIv2RwJmSeSr3NyLeycKParIE';
 
       // Table/bucket names — isolated under an ea_ prefix
       const T_EMPLOYEES = 'ea_employees', T_SHIFTS = 'ea_shifts', T_SCHEDULE = 'ea_schedule',
