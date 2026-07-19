@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EMPORIO ARMANI | Staff System</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b0b0a'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='58' fill='%23ffffff' text-anchor='middle'%3EEA%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' fill='%230b0b0a' rx='40'/%3E%3Cg transform='translate(45, 45)'%3E%3Crect width='90' height='90' fill='%23d8d8d4' rx='8'/%3E%3Ctext x='45' y='65' font-family='Georgia,serif' font-size='60' font-weight='bold' fill='%230b0b0a' text-anchor='middle' letter-spacing='2'%3EEA%3C/text%3E%3C/g%3E%3C/svg%3E">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Emporio Armani">
+  <meta name="theme-color" content="#0b0b0a">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
@@ -307,6 +309,88 @@
       background: #efece2;
       border-color: #d8d8d4;
     }
+    
+    body.light-theme .photo-card,
+    body.light-theme .manual-item {
+      background-color: #ffffff;
+      border-color: #e2ddd0;
+    }
+    
+    body.light-theme .photo-card:hover,
+    body.light-theme .manual-item:hover {
+      border-color: #d8d8d4;
+    }
+    
+    body.light-theme .input-field {
+      background: #ffffff;
+      border-color: #e2ddd0;
+      color: #16150f;
+    }
+    
+    body.light-theme .input-field:focus {
+      border-color: #d8d8d4;
+    }
+    
+    body.light-theme .btn {
+      color: #16150f;
+      border-color: #16150f;
+    }
+    
+    body.light-theme .btn:hover {
+      background: #16150f;
+      color: #f7f6f2;
+    }
+    
+    body.light-theme .btn-primary {
+      background: #d8d8d4;
+      color: #16150f;
+      border-color: #d8d8d4;
+    }
+    
+    body.light-theme .btn-primary:hover {
+      background: #16150f;
+      border-color: #16150f;
+      color: #f7f6f2;
+    }
+    
+    body.light-theme table {
+      color: #16150f;
+    }
+    
+    body.light-theme th {
+      color: #d8d8d4;
+      background: #f7f6f2;
+    }
+    
+    body.light-theme td {
+      border-bottom-color: #e2ddd0;
+    }
+    
+    body.light-theme .modal {
+      background: #f7f6f2;
+      border-color: rgba(0, 0, 0, 0.1);
+      color: #16150f;
+    }
+    
+    body.light-theme .modal h3 {
+      border-bottom-color: #e2ddd0;
+      color: #16150f;
+    }
+    
+    body.light-theme .dropdown-menu {
+      background: #ffffff;
+      border-color: #e2ddd0;
+    }
+    
+    body.light-theme .menu-item {
+      color: #16150f;
+      border-bottom-color: #e2ddd0;
+    }
+    
+    body.light-theme .menu-item:hover {
+      background: #efece2;
+      color: #d8d8d4;
+    }
 
     @media (max-width: 768px) {
       .header { flex-direction: column; align-items: flex-start; gap: 20px; }
@@ -565,13 +649,19 @@
 
       const DEMO_SHIFTS = [
         { id: 1, title: '10:00–19:00', start_time: '10:00', end_time: '19:00', break_start: '14:00', break_end: '15:00', work_hours: 8 },
-        { id: 2, title: '13:00–22:00', start_time: '13:00', end_time: '22:00', break_start: '15:00', break_end: '16:00', work_hours: 8 },
-        { id: 3, title: '10:00–17:00', start_time: '10:00', end_time: '17:00', break_start: '13:00', break_end: '14:00', work_hours: 6 },
-        { id: 4, title: '12:00–19:00', start_time: '12:00', end_time: '19:00', break_start: '15:00', break_end: '16:00', work_hours: 6 },
-        { id: 5, title: '13:00–20:00', start_time: '13:00', end_time: '20:00', break_start: '16:00', break_end: '17:00', work_hours: 6 },
-        { id: 8, title: '10:00–15:00', start_time: '10:00', end_time: '15:00', break_start: '12:00', break_end: '13:00', work_hours: 4 },
-        { id: 9, title: '12:00–17:00', start_time: '12:00', end_time: '17:00', break_start: '14:00', break_end: '15:00', work_hours: 4 },
-        { id: 10, title: '13:00–18:00', start_time: '13:00', end_time: '18:00', break_start: '15:00', break_end: '16:00', work_hours: 4 }
+        { id: 2, title: '11:00–20:00', start_time: '11:00', end_time: '20:00', break_start: '15:00', break_end: '16:00', work_hours: 8 },
+        { id: 3, title: '12:00–21:00', start_time: '12:00', end_time: '21:00', break_start: '16:00', break_end: '17:00', work_hours: 8 },
+        { id: 4, title: '13:00–22:00', start_time: '13:00', end_time: '22:00', break_start: '17:00', break_end: '18:00', work_hours: 8 },
+        { id: 5, title: '10:00–17:00', start_time: '10:00', end_time: '17:00', break_start: '13:00', break_end: '14:00', work_hours: 6 },
+        { id: 6, title: '12:00–19:00', start_time: '12:00', end_time: '19:00', break_start: '15:00', break_end: '16:00', work_hours: 6 },
+        { id: 7, title: '13:00–20:00', start_time: '13:00', end_time: '20:00', break_start: '16:00', break_end: '17:00', work_hours: 6 },
+        { id: 8, title: '14:00–21:00', start_time: '14:00', end_time: '21:00', break_start: '17:00', break_end: '18:00', work_hours: 6 },
+        { id: 9, title: '15:00–22:00', start_time: '15:00', end_time: '22:00', break_start: '18:00', break_end: '19:00', work_hours: 6 },
+        { id: 10, title: '10:00–15:00', start_time: '10:00', end_time: '15:00', break_start: '12:00', break_end: '13:00', work_hours: 4 },
+        { id: 11, title: '12:00–17:00', start_time: '12:00', end_time: '17:00', break_start: '14:00', break_end: '15:00', work_hours: 4 },
+        { id: 12, title: '13:00–18:00', start_time: '13:00', end_time: '18:00', break_start: '15:00', break_end: '16:00', work_hours: 4 },
+        { id: 13, title: '15:00–20:00', start_time: '15:00', end_time: '20:00', break_start: '17:00', break_end: '18:00', work_hours: 4 },
+        { id: 14, title: '17:00–22:00', start_time: '17:00', end_time: '22:00', break_start: '19:00', break_end: '20:00', work_hours: 4 }
       ];
 
       function buildDemoData() {
@@ -630,17 +720,19 @@
         if (!supabase) return;
         const shifts = [
           { id: 1, title: '10:00–19:00', start_time: '10:00', end_time: '19:00', break_start: '14:00', break_end: '15:00', work_hours: 8 },
-          { id: 2, title: '13:00–22:00', start_time: '13:00', end_time: '22:00', break_start: '15:00', break_end: '16:00', work_hours: 8 },
-          { id: 3, title: '10:00–17:00', start_time: '10:00', end_time: '17:00', break_start: '13:00', break_end: '14:00', work_hours: 6 },
-          { id: 4, title: '12:00–19:00', start_time: '12:00', end_time: '19:00', break_start: '15:00', break_end: '16:00', work_hours: 6 },
-          { id: 5, title: '13:00–20:00', start_time: '13:00', end_time: '20:00', break_start: '16:00', break_end: '17:00', work_hours: 6 },
-          { id: 6, title: '14:00–21:00', start_time: '14:00', end_time: '21:00', break_start: '17:00', break_end: '18:00', work_hours: 6 },
-          { id: 7, title: '15:00–22:00', start_time: '15:00', end_time: '22:00', break_start: '18:00', break_end: '19:00', work_hours: 6 },
-          { id: 8, title: '10:00–15:00', start_time: '10:00', end_time: '15:00', break_start: '12:00', break_end: '13:00', work_hours: 4 },
-          { id: 9, title: '12:00–17:00', start_time: '12:00', end_time: '17:00', break_start: '14:00', break_end: '15:00', work_hours: 4 },
-          { id: 10, title: '13:00–18:00', start_time: '13:00', end_time: '18:00', break_start: '15:00', break_end: '16:00', work_hours: 4 },
-          { id: 11, title: '15:00–20:00', start_time: '15:00', end_time: '20:00', break_start: '17:00', break_end: '18:00', work_hours: 5 },
-          { id: 12, title: '17:00–22:00', start_time: '17:00', end_time: '22:00', break_start: '19:00', break_end: '20:00', work_hours: 5 }
+          { id: 2, title: '11:00–20:00', start_time: '11:00', end_time: '20:00', break_start: '15:00', break_end: '16:00', work_hours: 8 },
+          { id: 3, title: '12:00–21:00', start_time: '12:00', end_time: '21:00', break_start: '16:00', break_end: '17:00', work_hours: 8 },
+          { id: 4, title: '13:00–22:00', start_time: '13:00', end_time: '22:00', break_start: '17:00', break_end: '18:00', work_hours: 8 },
+          { id: 5, title: '10:00–17:00', start_time: '10:00', end_time: '17:00', break_start: '13:00', break_end: '14:00', work_hours: 6 },
+          { id: 6, title: '12:00–19:00', start_time: '12:00', end_time: '19:00', break_start: '15:00', break_end: '16:00', work_hours: 6 },
+          { id: 7, title: '13:00–20:00', start_time: '13:00', end_time: '20:00', break_start: '16:00', break_end: '17:00', work_hours: 6 },
+          { id: 8, title: '14:00–21:00', start_time: '14:00', end_time: '21:00', break_start: '17:00', break_end: '18:00', work_hours: 6 },
+          { id: 9, title: '15:00–22:00', start_time: '15:00', end_time: '22:00', break_start: '18:00', break_end: '19:00', work_hours: 6 },
+          { id: 10, title: '10:00–15:00', start_time: '10:00', end_time: '15:00', break_start: '12:00', break_end: '13:00', work_hours: 4 },
+          { id: 11, title: '12:00–17:00', start_time: '12:00', end_time: '17:00', break_start: '14:00', break_end: '15:00', work_hours: 4 },
+          { id: 12, title: '13:00–18:00', start_time: '13:00', end_time: '18:00', break_start: '15:00', break_end: '16:00', work_hours: 4 },
+          { id: 13, title: '15:00–20:00', start_time: '15:00', end_time: '20:00', break_start: '17:00', break_end: '18:00', work_hours: 4 },
+          { id: 14, title: '17:00–22:00', start_time: '17:00', end_time: '22:00', break_start: '19:00', break_end: '20:00', work_hours: 4 }
         ];
         await supabase.from(T_SHIFTS).upsert(shifts);
       }
@@ -789,7 +881,7 @@
         }
         renderLegend() {
           const leg = document.getElementById('schedLegend'); leg.innerHTML = '';
-          const groups = [{ title: 'Директор (1.0 ставка - 8ч)', ids: [1, 2], color: '#f2f0ea' }, { title: 'Продавцы (0.75 ставка - 6ч)', ids: [3, 4, 5, 6, 7], color: '#aaaaa2' }, { title: 'Продавцы (0.5 ставка - 4ч)', ids: [8, 9, 10, 11, 12], color: '#77756c' }];
+          const groups = [{ title: 'Директор (1.0 ставка - 8ч)', ids: [1, 2, 3, 4], color: '#f2f0ea' }, { title: 'Продавцы (0.75 ставка - 6ч)', ids: [5, 6, 7, 8, 9], color: '#aaaaa2' }, { title: 'Продавцы (0.5 ставка - 4ч)', ids: [10, 11, 12, 13, 14], color: '#77756c' }];
           groups.forEach(group => {
             const header = document.createElement('div'); header.style.gridColumn = '1 / -1'; header.style.marginTop = '15px'; header.style.fontWeight = 'bold'; header.style.fontSize = '11px'; header.style.letterSpacing='1px'; header.style.textTransform='uppercase'; header.style.color='var(--text-muted)'; header.textContent = group.title; leg.appendChild(header);
             this.shiftTypes.filter(s => group.ids.includes(s.id)).forEach(s => {
