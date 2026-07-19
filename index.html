@@ -8,7 +8,9 @@
   <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' fill='%230b0b0a' rx='40'/%3E%3Cg transform='translate(45, 45)'%3E%3Crect width='90' height='90' fill='%23d8d8d4' rx='8'/%3E%3Ctext x='45' y='65' font-family='Georgia,serif' font-size='60' font-weight='bold' fill='%230b0b0a' text-anchor='middle' letter-spacing='2'%3EEA%3C/text%3E%3C/g%3E%3C/svg%3E">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Emporio Armani">
+  <meta name="apple-mobile-web-app-title" content="EA Staff">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
   <meta name="theme-color" content="#0b0b0a">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,18 +42,18 @@
     }
 
     body.light-theme {
-      --bg-color: #f7f6f2;
-      --card-bg: #ffffff;
-      --text-main: #16150f;
-      --text-muted: #6b6558;
-      --border-color: #e2ddd0;
-      --accent-color: #16150f;
-      --hover-color: #efece2;
-      --weekend-bg: rgba(0, 0, 0, 0.05);
-      --b-bg: rgba(0, 0, 0, 0.08);
-      --b-text: #16150f;
-      --weekend-text: #16150f;
-      --gold-soft: rgba(0, 0, 0, 0.08);
+      --bg-color: #f7f6f2 !important;
+      --card-bg: #ffffff !important;
+      --text-main: #16150f !important;
+      --text-muted: #6b6558 !important;
+      --border-color: #e2ddd0 !important;
+      --accent-color: #16150f !important;
+      --hover-color: #efece2 !important;
+      --weekend-bg: rgba(0, 0, 0, 0.05) !important;
+      --b-bg: rgba(0, 0, 0, 0.08) !important;
+      --b-text: #16150f !important;
+      --weekend-text: #16150f !important;
+      --gold-soft: rgba(0, 0, 0, 0.08) !important;
     }
     
     body.light-theme .schedule-table .sticky-col {
@@ -293,103 +295,114 @@
     .live-indicator { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); display: flex; align-items: center; margin-bottom: 16px; }
 
     body.light-theme .tab-content {
-      color: #16150f;
+      color: #16150f !important;
     }
     
     body.light-theme .training-card,
     body.light-theme .collection-card,
     body.light-theme .module-item {
-      background: #ffffff;
-      border-color: #e2ddd0;
+      background: #ffffff !important;
+      border-color: #e2ddd0 !important;
+    }
+    
+    body.light-theme .training-card h3,
+    body.light-theme .training-card p,
+    body.light-theme .collection-card h4,
+    body.light-theme .collection-card p,
+    body.light-theme .module-item h4,
+    body.light-theme .module-item p {
+      color: #16150f !important;
     }
     
     body.light-theme .training-card:hover,
     body.light-theme .collection-card:hover,
     body.light-theme .module-item:hover {
-      background: #efece2;
-      border-color: #d8d8d4;
+      background: #efece2 !important;
+      border-color: #d8d8d4 !important;
     }
     
     body.light-theme .photo-card,
     body.light-theme .manual-item {
-      background-color: #ffffff;
-      border-color: #e2ddd0;
+      background-color: #ffffff !important;
+      border-color: #e2ddd0 !important;
     }
     
     body.light-theme .photo-card:hover,
     body.light-theme .manual-item:hover {
-      border-color: #d8d8d4;
+      border-color: #d8d8d4 !important;
     }
     
     body.light-theme .input-field {
-      background: #ffffff;
-      border-color: #e2ddd0;
-      color: #16150f;
+      background: #ffffff !important;
+      border-color: #e2ddd0 !important;
+      color: #16150f !important;
     }
     
     body.light-theme .input-field:focus {
-      border-color: #d8d8d4;
+      border-color: #d8d8d4 !important;
     }
     
     body.light-theme .btn {
-      color: #16150f;
-      border-color: #16150f;
+      color: #16150f !important;
+      border-color: #16150f !important;
     }
     
     body.light-theme .btn:hover {
-      background: #16150f;
-      color: #f7f6f2;
+      background: #16150f !important;
+      color: #f7f6f2 !important;
     }
     
     body.light-theme .btn-primary {
-      background: #d8d8d4;
-      color: #16150f;
-      border-color: #d8d8d4;
+      background: #d8d8d4 !important;
+      color: #16150f !important;
+      border-color: #d8d8d4 !important;
     }
     
     body.light-theme .btn-primary:hover {
-      background: #16150f;
-      border-color: #16150f;
-      color: #f7f6f2;
+      background: #16150f !important;
+      border-color: #16150f !important;
+      color: #f7f6f2 !important;
     }
     
     body.light-theme table {
-      color: #16150f;
+      color: #16150f !important;
     }
     
     body.light-theme th {
-      color: #d8d8d4;
-      background: #f7f6f2;
+      color: #16150f !important;
+      background: #f7f6f2 !important;
+      opacity: 0.8;
     }
     
     body.light-theme td {
-      border-bottom-color: #e2ddd0;
+      border-bottom-color: #e2ddd0 !important;
+      color: #16150f !important;
     }
     
     body.light-theme .modal {
-      background: #f7f6f2;
-      border-color: rgba(0, 0, 0, 0.1);
-      color: #16150f;
+      background: #f7f6f2 !important;
+      border-color: rgba(0, 0, 0, 0.1) !important;
+      color: #16150f !important;
     }
     
     body.light-theme .modal h3 {
-      border-bottom-color: #e2ddd0;
-      color: #16150f;
+      border-bottom-color: #e2ddd0 !important;
+      color: #16150f !important;
     }
     
     body.light-theme .dropdown-menu {
-      background: #ffffff;
-      border-color: #e2ddd0;
+      background: #ffffff !important;
+      border-color: #e2ddd0 !important;
     }
     
     body.light-theme .menu-item {
-      color: #16150f;
-      border-bottom-color: #e2ddd0;
+      color: #16150f !important;
+      border-bottom-color: #e2ddd0 !important;
     }
     
     body.light-theme .menu-item:hover {
-      background: #efece2;
-      color: #d8d8d4;
+      background: #efece2 !important;
+      color: #d8d8d4 !important;
     }
 
     @media (max-width: 768px) {
